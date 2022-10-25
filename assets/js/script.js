@@ -6,7 +6,24 @@ const parallaxInstance = new Parallax(scene, {
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
+    initialSlide: 1,
+    centeredSlides: true,
     spaceBetween: 30,
     loop: true,
-    centeredSlides: true,
+
+    autoplay: {
+        delay: 3000,
+        duration: 3000,
+        trasition: 3000,
+        speed: 3000,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
+        660: {
+            slidesPerView: 'auto'
+        }
+    }
 });
