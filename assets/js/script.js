@@ -6,12 +6,11 @@ const parallaxInstance = new Parallax(scene, {
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
-    initialSlide: 2,
     centeredSlides: true,
     centerInsufficientSlides: true,
     spaceBetween: 30,
     speed: 1000,
-    // loop: true,
+    loop: true,
     slideToClickedSlide: true,
     autoplay: {
         delay: 3000,

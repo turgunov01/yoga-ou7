@@ -27,6 +27,7 @@
             display: grid;
             place-items: center;
             left: 50%;
+            top: 0% !important;
             transform: translateX(-50%);
 
             &::after {
@@ -64,6 +65,9 @@
 @media(max-width: 875px) {}
 
 @media(max-width: 768px) {
+    .header::after {
+        display: none;
+    }
     .main {
         .slider {
             max-width: 74rem;
@@ -147,7 +151,7 @@
         &__icon {
             flex-direction: column;
             row-gap: 1.5rem;
-
+            text-align: center;
         }
     }
 
@@ -175,11 +179,16 @@
         }
     }
 
+    .main .slider .install-btn {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
     .main {
         & .slider {
             max-width: unset;
             width: 95%;
-            height: 125rem;
+            height: 115rem;
         }
     }
 
@@ -190,13 +199,13 @@
             }
 
             &::after {
-                width: 40rem;
-                height: 40rem;
+                width: 50rem;
+                height: 50rem;
             }
 
             &::before {
-                width: 50rem;
-                height: 50rem;
+                width: 70rem;
+                height: 70rem;
             }
         }
     }
@@ -233,7 +242,7 @@
             justify-content: center;
 
             &-image {
-                width: max-content;
+                width: 200% !important;
                 top: 60% !important;
             }
 
@@ -266,11 +275,12 @@
     }
 
     .header__content-image {
-        width: 175%;
+        width: 200%;
     }
 
     .header__background {
         transform: translate(0) scale(1.2);
+        top: 10% !important;
 
         &-image {
             width: 20rem;
@@ -488,6 +498,14 @@
 
 @media(max-width: 375px) {
 
+    .main .intro__block {
+        margin-top: 3rem;
+    }
+
+    .header__background {
+        height: 20rem;
+    }
+
     .main .intro__install-btn-image {
         width: 100%;
     }
@@ -513,12 +531,12 @@
 
     .main {
         & .slider {
-            height: 92rem;
+            height: 83rem;
             padding: 2rem;
 
             & .mySwiper {
                 width: 85%;
-                height: 55rem;
+                height: 45rem;
             }
         }
 
@@ -630,7 +648,7 @@
 
         .header {
             &__content {
-                height: 100vh;
+                height: 40rem;
 
                 &-name {
                     font-size: 8rem;
@@ -639,7 +657,7 @@
             }
 
             &__background {
-                height: 60rem;
+                height: 20rem;
 
                 &-image {
                     width: 20rem;
