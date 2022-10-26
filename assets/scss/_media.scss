@@ -148,6 +148,9 @@
 }
 
 @media(max-width: 660px) {
+    .header {
+        overflow: hidden;
+    }
     .footer {
         & .container {
             padding: 3rem 1.5rem;
