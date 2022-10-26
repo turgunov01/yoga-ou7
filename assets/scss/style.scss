@@ -97,6 +97,24 @@ a {
         margin: 0 auto;
         display: grid;
 
+        &::after {
+            content: 'Групповые тренировки';
+            position: absolute;
+            top: 12rem;
+            right: calc(100% / 24);
+            background: linear-gradient(268.78deg, #1DCCFD -0.12%, #9C27B0 102.45%);
+            border-radius: 100px;
+            color: white;
+            width: 26.4rem;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            font-weight: 700;
+            height: 5.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         &-icon {
 
             &-1,
@@ -165,11 +183,11 @@ a {
             left: 50%;
             top: 50%;
             background: url('../img/wave.png') no-repeat center center / cover;
-            width: 114rem;
-            height: 114rem;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            animation: magnet1 5s linear infinite;
             transform: translate(-50%, -50%);
-            opacity: 0.5;
-            animation: magnet 3s linear infinite alternate;
 
         }
 
@@ -179,18 +197,21 @@ a {
             left: 50%;
             top: 50%;
             background: url('../img/wave.png') no-repeat center center / cover;
-            width: 68rem;
-            height: 68rem;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            animation: magnet2 6s linear infinite;
             transform: translate(-50%, -50%);
-            opacity: 0.7;
-            animation: magnet 2s linear infinite alternate;
-
         }
 
         &-image {
             position: relative;
-            animation: magnet 1s linear infinite alternate;
-            opacity: 0.9;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: magnet3 7s linear infinite;
+            transform: scale(0);
         }
     }
 }
@@ -326,11 +347,11 @@ a {
                     left: 50%;
                     top: 50%;
                     background: url('../img/wave.png') no-repeat center center / cover;
-                    width: 66rem;
-                    height: 66rem;
+                    width: 0;
+                    height: 0;
                     transform: translate(-50%, -50%);
-                    opacity: 0.5;
-                    animation: magnet 3s linear infinite alternate;
+                    opacity: 0; // 0.5
+                    animation: middle1 4s linear infinite;
                 }
 
                 &::before {
@@ -339,11 +360,11 @@ a {
                     left: 50%;
                     top: 50%;
                     background: url('../img/wave.png') no-repeat center center / cover;
-                    width: 55rem;
-                    height: 55rem;
+                    width: 0;
+                    height: 0;
                     transform: translate(-50%, -50%);
-                    opacity: 0.5;
-                    animation: magnet 1.5s linear infinite alternate;
+                    opacity: 0; // 0.6
+                    animation: middle2 3s linear infinite;
 
                 }
             }
@@ -351,12 +372,12 @@ a {
             &-image {
                 top: 50%;
                 left: 50%;
-                width: 44rem;
-                height: 44rem;
+                width: 0;
+                height: 0;
                 transform: translate(-50%, -50%);
                 position: absolute;
-                opacity: 0.7;
-                animation: magnet 2s linear infinite alternate;
+                opacity: 0; // 0.7
+                animation: middle3 6s linear infinite;
             }
         }
 
@@ -406,6 +427,11 @@ a {
     }
 
     & .slider {
+        & .intro__install-btns.none {
+            flex-direction: column;
+            row-gap: 1;
+        }
+
         height: 115.3rem;
         width: 100%;
         max-width: 93.4rem;
@@ -439,6 +465,7 @@ a {
 
         & .swiper {
             overflow: visible;
+
             &-wrapper {
                 align-items: center;
             }
@@ -516,13 +543,6 @@ a {
     }
 }
 
-.swiper-slide-duplicate .swiper-slide-duplicate-next {
-    display: none !important;
-}
-
-.swiper-slide-duplicate .swiper-slide-duplicate-prev {
-    display: none !important;
-}
 
 .installation1 {
     display: flex;
@@ -620,38 +640,12 @@ a {
     }
 }
 
-.swiper-slide-duplicate {
-    display: none;
-}
 
-.swiper-slide {
-    display: block;
-
-    &.swiper-slide-duplicate.swiper-slide-active {
-        display: block;
-    }
-}
 
 .header {
     position: relative;
 
-    &::after {
-        content: 'Групповые тренировки';
-        position: absolute;
-        top: 12rem;
-        right: 25%;
-        background: linear-gradient(268.78deg, #1DCCFD -0.12%, #9C27B0 102.45%);
-        border-radius: 100px;
-        color: white;
-        width: 26.4rem;
-        font-size: 1.6rem;
-        line-height: 2.6rem;
-        font-weight: 700;
-        height: 5.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 
     padding: 1rem 0;
 
@@ -683,7 +677,7 @@ a {
 }
 
 .swiper-slide {
-    filter: opacity(0%);
+    filter: opacity(5%);
     backdrop-filter: blur(10px);
 }
 
@@ -705,13 +699,121 @@ a {
 
 @import './media.scss';
 
-@keyframes magnet {
+@keyframes magnet1 {
     0% {
+        width: 0;
+        height: 0;
         opacity: 0;
-        transform: scale(1) translate(50, 0%);
+    }
+
+    50% {
+        width: 50rem;
+        height: 50rem;
+        opacity: 0.6;
     }
 
     100% {
-        transform: scale(4) translate(50, 0%);
+        width: 114rem;
+        height: 114rem;
+        opacity: 0;
+    }
+}
+
+@keyframes magnet2 {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    50% {
+        width: 15rem;
+        height: 15rem;
+        opacity: 0.4;
+    }
+
+    100% {
+        width: 68rem;
+        height: 68rem;
+        opacity: 0;
+    }
+}
+
+@keyframes magnet3 {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+
+
+@keyframes middle1 {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+        width: 30rem;
+        height: 30rem;
+    }
+
+    100% {
+        opacity: 0;
+        width: 66rem;
+        height: 66rem;
+    }
+}
+
+@keyframes middle2 {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+        width: 25rem;
+        height: 25rem;
+    }
+
+    100% {
+        opacity: 0;
+        width: 50rem;
+        height: 50rem;
+    }
+}
+
+@keyframes middle3 {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+        width: 30rem;
+        height: 30rem;
+    }
+
+    100% {
+        opacity: 0;
+        width: 70rem;
+        height: 70rem;
     }
 }

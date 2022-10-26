@@ -8,15 +8,13 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   loop: true,
   slidesPerView: 'auto',
-  speed: 1000,
   spaceBetween: 30,
   slideToClickedSlide: true,
-  resizeObserver: true,
+  speed: 1000,
+  duration: 2000,
+  transition: 500,
   autoplay: {
     delay: 3000,
-    duration: 3000,
-    trasition: 3000,
-    speed: 3000,
   },
   breakpoints: {
     0: {
@@ -37,7 +35,3 @@ var swiper = new Swiper(".mySwiper", {
   //   speed: 3000,
   // },
 });
-
-window.addEventListener('resize', () => {
-  swiper.init()
-})

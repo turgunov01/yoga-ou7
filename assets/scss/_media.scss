@@ -124,6 +124,10 @@
 
     .header {
         &__content {
+            &::after {
+                display: none;
+            }
+
             &-name {
                 top: 35% !important;
             }
@@ -151,6 +155,7 @@
     .header {
         overflow: hidden;
     }
+
     .footer {
         & .container {
             padding: 3rem 1.5rem;
@@ -191,10 +196,7 @@
         }
     }
 
-    .main .slider .install-btn {
-        border-radius: 1rem;
-        overflow: hidden;
-    }
+
 
     .main {
         & .slider {
@@ -282,6 +284,20 @@
 }
 
 @media(max-width: 575px) {
+    .main .intro__install-btns {
+        flex-direction: column;
+        row-gap: 1rem;
+        display: none;
+
+        &.none {
+            display: flex !important;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+
     .header__content-name {
         top: 50% !important;
     }
@@ -317,7 +333,7 @@
 
         & .intro {
             &__block {
-                height: 118rem;
+                height: 122rem;
             }
 
             &__content {
@@ -345,13 +361,30 @@
 
 
 @media(max-width: 475px) {
+
     .header {
+        &__content {
+            &-name {
+                font-size: 16rem;
+                line-height: 18rem;
+            }
+        }
+    }
+
+
+
+
+
+    .header {
+        padding-top: 5rem;
+
         &__content {
             height: 55rem;
 
             &-name {
-                font-size: 8rem;
-                line-height: 6rem;
+                font-size: 14rem;
+                top: 30% !important;
+                line-height: 12rem;
             }
         }
 
@@ -517,6 +550,11 @@
 }
 
 @media(max-width: 420px) {
+
+    .header__content-icon-2 {
+        right: -2.5% !important;
+    }
+
     .main {
         & .intro {
             &__block {
@@ -528,15 +566,15 @@
             .swiper {
                 &-slide {
                     &-text {
-                        font-size: 1.4rem;
-                        line-height: 2.4rem;
-                        left: 2rem;
+                        font-size: 1.2rem;
+                        line-height: 1.4rem;
+                        left: 1rem;
                         bottom: 1.877rem;
                     }
 
                     &-level {
-                        font-size: 1.4rem;
-                        line-height: 2.4rem;
+                        font-size: 1.1rem;
+                        line-height: 1.2rem;
                         top: 1.008rem;
                         left: 1.008rem;
                     }
@@ -547,11 +585,11 @@
 
     .header {
         &__content {
-            height: 53rem;
+            height: 42rem;
 
             &-name {
-                font-size: 8rem;
-                line-height: 6rem;
+                font-size: 12rem;
+                line-height: 10rem;
             }
         }
 
@@ -600,6 +638,43 @@
 
 @media(max-width: 375px) {
 
+    .header {
+        &__content {
+            &-name {
+                font-size: 10rem;
+                line-height: 8rem;
+            }
+        }
+    }
+
+    .main {
+        & .slider {
+            .swiper {
+                &-slide {
+                    &-text {
+                        font-size: 1.2rem;
+                        line-height: 1.4rem;
+                        left: 1rem;
+                        bottom: 1.877rem;
+                    }
+
+                    &-level {
+                        font-size: 1.1rem;
+                        line-height: 1.2rem;
+                        top: 1.008rem;
+                        left: 1.008rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .main .slider .swiper-slide-level {
+        padding: .4rem 1rem;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+    }
+
     .main .intro__block {
         margin-top: 3rem;
     }
@@ -617,19 +692,7 @@
         line-height: 2.2rem;
     }
 
-    .main .intro__install-btns {
-        flex-direction: column;
-        row-gap: 1rem;
-        display: none;
 
-        &.none {
-            display: flex !important;
-
-            & img {
-                width: 100%;
-            }
-        }
-    }
 
     .main {
         & .slider {
