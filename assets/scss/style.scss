@@ -474,9 +474,8 @@ a {
             &-slide {
                 width: 34.3rem;
                 height: 34.3rem;
-                border-radius: 2rem;
+                border-radius: 1rem;
                 overflow: hidden;
-                transform: scale(0.9);
 
                 &-level {
                     font-size: 1.4rem;
@@ -485,6 +484,7 @@ a {
                     position: absolute;
                     left: 2rem;
                     top: 2rem;
+                    z-index: 10;
                     color: white;
                     padding: .6rem 1rem;
                     text-align: center;
@@ -512,22 +512,12 @@ a {
                     position: absolute;
                     left: 2rem;
                     bottom: 2rem;
+                    z-index: 10;
                     font-size: 2.4rem;
                     font-weight: 600;
                     line-height: 3.4rem;
                     color: white;
                     z-index: 20;
-                }
-
-                &-active {
-                    opacity: 1;
-                    transform: scale(1.2);
-                }
-
-                & img {
-                    object-fit: contain;
-                    width: 100%;
-                    height: 100%;
                 }
 
                 &::after {
@@ -537,6 +527,7 @@ a {
                     width: 100%;
                     top: 0;
                     height: 100%;
+                    opacity: 25%;
                     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 100%);
                 }
             }
@@ -577,18 +568,7 @@ a {
             transform: scale(1.05);
         }
 
-        &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 50px;
-            left: 0;
-            top: 50%;
-            background: black;
-            transform: translateY(-50%);
-            border-radius: .8rem;
-            z-index: -1;
-        }
+
     }
 }
 
@@ -645,7 +625,7 @@ a {
 
 .header {
     position: relative;
-
+    overflow: hidden;
 
 
     padding: 1rem 0;
@@ -677,25 +657,60 @@ a {
 
 }
 
+
+
 .swiper-slide {
-    filter: opacity(5%);
-    backdrop-filter: blur(10px);
+    transform: scale(0.9);
+    filter: opacity(0%);
+    &-prev, &-next {
+        filter: opacity(50%);
+    }
+
+    &-active {
+    filter: opacity(100%);
+
+        width: 43rem;
+        height: 43rem;
+        transition: .5s;
+        & .swiper__slide {
+            position: relative;
+            overflow: visible;
+            width: 100%;
+            height: 100%;
+        }
+        transform: scale(1.1);
+    }
+
 }
 
-.swiper-slide-active {
-    transform: scale(1.1);
+
+.swiper__slide {
+    backdrop-filter: blur(10px);
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        top: 50%;
+        background: black;
+        transform: translateY(-50%);
+        border-radius: .8rem;
+        z-index: -1;
+    }
+
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper__slide-active {
     height: max-content;
     filter: opacity(100%)
 }
-
-.swiper-slide-prev {
-    filter: opacity(50%)
-}
-
-.swiper-slide-next {
-    filter: opacity(50%)
-}
-
 
 
 @import './media.scss';
@@ -710,7 +725,7 @@ a {
     50% {
         width: 50rem;
         height: 50rem;
-        opacity: 0.6;
+        opacity: 0.7;
     }
 
     100% {
@@ -730,7 +745,7 @@ a {
     50% {
         width: 15rem;
         height: 15rem;
-        opacity: 0.4;
+        opacity: 1;
     }
 
     100% {
@@ -748,7 +763,6 @@ a {
 
     50% {
         opacity: 1;
-        transform: scale(1.5);
     }
 
     100% {

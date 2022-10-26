@@ -201,7 +201,7 @@
     .main {
         & .slider {
             max-width: unset;
-            width: 95%;
+            width: 90%;
             height: 115rem;
         }
     }
@@ -647,10 +647,24 @@
         }
     }
 
+    .header__content-icon-1 {
+        width: 5rem;
+        top: calc(100% / 6) !important;
+        left: 1rem !important;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+    }
+
     .main {
         & .slider {
             .swiper {
                 &-slide {
+                    transform: scale(0.9);
+
+                    &-active {
+                        transform: scale(1.1);
+                    }
+
                     &-text {
                         font-size: 1.2rem;
                         line-height: 1.4rem;
