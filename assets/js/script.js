@@ -8,11 +8,11 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
     initialSlide: 2,
     centeredSlides: true,
+    centerInsufficientSlides: true,
     spaceBetween: 30,
     speed: 1000,
     // loop: true,
     slideToClickedSlide: true,
-    pauseOnMouseEnter: true,
     autoplay: {
         delay: 3000,
         duration: 3000,
@@ -21,7 +21,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         0: {
-            spaceBetween: 15,
+            spaceBetween: 10,
         },
         320: {
             spaceBetween: 30,
