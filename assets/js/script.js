@@ -38,3 +38,6 @@ var swiper = new Swiper(".mySwiper", {
   // },
 });
 
+window.addEventListener('resize', () => {
+  swiper.init()
+})
