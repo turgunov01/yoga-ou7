@@ -622,6 +622,18 @@ a {
     }
 }
 
+.swiper-slide-duplicate {
+    display: none;
+}
+
+.swiper-slide {
+    display: block;
+
+    &.swiper-slide-duplicate.swiper-slide-active {
+        display: block;
+    }
+}
+
 .header {
     position: relative;
 
@@ -671,6 +683,25 @@ a {
     }
 
 }
+
+.swiper-slide {
+    opacity: 0%;
+}
+
+.swiper-slide-active {
+    opacity: 100%;
+    transform: scale(1.1);
+    height: max-content;
+}
+
+.swiper-slide-prev {
+    opacity: 50%;
+}
+
+.swiper-slide-next {
+    opacity: 50%;
+}
+
 
 
 @import './media.scss';

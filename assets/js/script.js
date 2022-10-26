@@ -32,12 +32,8 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 30,
-    speed: 1000,
-    duration: 2000,
-    transition: 500,
     autoplay: {
-        delay: 3000,
-        speed: 3000,
-        transition: 3000,
+      delay: 3000,
+      speed: 3000,
     },
 });
