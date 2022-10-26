@@ -5,35 +5,35 @@ const parallaxInstance = new Parallax(scene, {
 })
 
 var swiper = new Swiper(".mySwiper", {
-    // slidesPerView: 'auto',
-    // centeredSlides: true,
-    // centerInsufficientSlides: true,
-    // spaceBetween: 30,
-    // speed: 1000,
-    // loop: true,
-    // slideToClickedSlide: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     duration: 3000,
-    //     trasition: 3000,
-    //     speed: 3000,
-    // },
-    // breakpoints: {
-    //     0: {
-    //         spaceBetween: 10,
-    //     },
-    //     320: {
-    //         spaceBetween: 30,
-    //     }
-    // }
-
-    initialSlides: 2,
-    centeredSlides: true,
-    loop: true,
     slidesPerView: 'auto',
+    centeredSlides: true,
+    centerInsufficientSlides: true,
     spaceBetween: 30,
+    speed: 1000,
+    loop: true,
+    slideToClickedSlide: true,
     autoplay: {
-      delay: 3000,
-      speed: 3000,
+        delay: 3000,
+        duration: 3000,
+        trasition: 3000,
+        speed: 3000,
     },
+    breakpoints: {
+        0: {
+            spaceBetween: 10,
+        },
+        320: {
+            spaceBetween: 30,
+        }
+    }
+
+    // initialSlides: 2,
+    // centeredSlides: true,
+    // loop: true,
+    // slidesPerView: 'auto',
+    // spaceBetween: 30,
+    // autoplay: {
+    //   delay: 3000,
+    //   speed: 3000,
+    // },
 });
