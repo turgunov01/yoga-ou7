@@ -261,6 +261,9 @@
 }
 
 @media(max-width: 575px) {
+    .header__content-name {
+        top: 50% !important;
+    }
 
     .header__content-image {
         width: 175%;
@@ -372,8 +375,8 @@
         & .slider {
 
             &__title {
-                font-size: 4rem;
-                line-height: 4rem;
+                font-size: 3rem;
+                line-height: 3rem;
             }
 
             &__text {
@@ -510,7 +513,7 @@
 
     .main {
         & .slider {
-            height: 100rem;
+            height: 92rem;
             padding: 2rem;
 
             & .mySwiper {
@@ -569,6 +572,14 @@
     }
 
     @media(max-width: 350px) {
+
+        .header {
+            &__content {
+                &-icon {
+                    right: -5% !important;
+                }
+            }
+        }
         .main {
             & .slider {
                 & .swiper {
