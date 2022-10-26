@@ -17,13 +17,4 @@ var swiper = new Swiper(".mySwiper", {
         trasition: 3000,
         speed: 3000,
     },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-        },
-        660: {
-            slidesPerView: 'auto'
-        }
-    }
 });
