@@ -10,11 +10,12 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 'auto',
   spaceBetween: 30,
   slideToClickedSlide: true,
-  speed: 1000,
+  speed: 2000,
   duration: 2000,
-  transition: 500,
+  transition: 2000,
   autoplay: {
     delay: 3000,
+    
   },
   breakpoints: {
     0: {
