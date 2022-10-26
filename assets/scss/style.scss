@@ -685,21 +685,22 @@ a {
 }
 
 .swiper-slide {
-    opacity: 0%;
+    filter: opacity(0%);
+    backdrop-filter: blur(10px);
 }
 
 .swiper-slide-active {
-    opacity: 100%;
     transform: scale(1.1);
     height: max-content;
+    filter: opacity(100%)
 }
 
 .swiper-slide-prev {
-    opacity: 50%;
+    filter: opacity(50%)
 }
 
 .swiper-slide-next {
-    opacity: 50%;
+    filter: opacity(50%)
 }
 
 
