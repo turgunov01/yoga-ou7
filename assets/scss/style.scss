@@ -168,7 +168,9 @@ a {
             width: 114rem;
             height: 114rem;
             transform: translate(-50%, -50%);
-            opacity: 0.3;
+            opacity: 0.5;
+            animation: magnet 3s linear infinite alternate;
+
         }
 
         &::before {
@@ -180,12 +182,15 @@ a {
             width: 68rem;
             height: 68rem;
             transform: translate(-50%, -50%);
-            opacity: 0.5;
+            opacity: 0.7;
+            animation: magnet 2s linear infinite alternate;
+
         }
 
         &-image {
             position: relative;
-            opacity: 0.8;
+            animation: magnet 1s linear infinite alternate;
+            opacity: 0.9;
         }
     }
 }
@@ -324,7 +329,8 @@ a {
                     width: 66rem;
                     height: 66rem;
                     transform: translate(-50%, -50%);
-                    opacity: 0.3;
+                    opacity: 0.5;
+                    animation: magnet 3s linear infinite alternate;
                 }
 
                 &::before {
@@ -337,6 +343,8 @@ a {
                     height: 55rem;
                     transform: translate(-50%, -50%);
                     opacity: 0.5;
+                    animation: magnet 1.5s linear infinite alternate;
+
                 }
             }
 
@@ -348,6 +356,7 @@ a {
                 transform: translate(-50%, -50%);
                 position: absolute;
                 opacity: 0.7;
+                animation: magnet 2s linear infinite alternate;
             }
         }
 
@@ -664,4 +673,15 @@ a {
 }
 
 
-@import './media.scss'
+@import './media.scss';
+
+@keyframes magnet {
+    0% {
+        opacity: 0;
+        transform: scale(1) translate(50, 0%);
+    }
+
+    100% {
+        transform: scale(4) translate(50, 0%);
+    }
+}
