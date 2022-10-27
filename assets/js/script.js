@@ -9,22 +9,24 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 30,
-  slideToClickedSlide: true,
   speed: 2000,
   duration: 2000,
   transition: 2000,
   autoplay: {
     delay: 3000,
-    
+
   },
   breakpoints: {
     0: {
-      spaceBetween: 15,
+      spaceBetween: 50,
+      slidesPerView: 1.5,
+      centeredSlides: true,
     },
     660: {
       spaceBetween: 30,
-    }
-  }
+    },
+  },
+
 
   // initialSlides: 2,
   // centeredSlides: true,

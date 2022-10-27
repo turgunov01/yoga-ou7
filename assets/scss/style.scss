@@ -659,13 +659,17 @@ a {
 }
 
 
+.swiper-slide>div {
+    transition: all 1s ease;
+}
+
+.swiper-slide-visible {
+    transition: all 1s ease !important;
+}
 
 .swiper-slide {
     transform: scale(0.9);
     filter: opacity(0%);
-    &.swiper-slide-next {
-        transition: 500ms;
-    }
 
     &-prev,
     &-next {

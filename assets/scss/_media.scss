@@ -156,6 +156,10 @@
         overflow: hidden;
     }
 
+    .swiper-slide-active {
+        transform: scale(1.2) !important;
+    }
+
     .footer {
         & .container {
             padding: 3rem 1.5rem;
