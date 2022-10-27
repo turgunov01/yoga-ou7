@@ -21,7 +21,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
     },
     660: {
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
   },
 
