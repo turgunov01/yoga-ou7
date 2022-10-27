@@ -160,6 +160,14 @@
         transform: scale(1.2) !important;
     }
 
+    .header__content-image {
+        left: 45% !important;
+    }
+
+    .header__background {
+        top: 10% !important;
+    }
+
     .footer {
         & .container {
             padding: 3rem 1.5rem;
@@ -312,7 +320,6 @@
 
     .header__background {
         transform: translate(0) scale(1.2);
-        top: 10% !important;
 
         &-image {
             width: 20rem;
