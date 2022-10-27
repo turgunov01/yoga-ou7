@@ -572,9 +572,6 @@ a {
     }
 }
 
-.swiper-slide.swiper-slide-active {
-    transition: .3s;
-}
 
 
 .footer {
@@ -679,7 +676,6 @@ a {
 
         width: 43rem;
         height: 43rem;
-        transition: .5s;
 
         & .swiper__slide {
             position: relative;
