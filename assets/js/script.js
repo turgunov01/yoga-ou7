@@ -495,7 +495,7 @@ if (window.location.href == 'https://yogastream.uz?lang=uz#loaded' || window.loc
                     <div class="text">
                         <div class="footer__icon-texts">
                             <h4 class="footer__icon-title">OU7 Training</h4>
-                            <p class="footer__icon-about">Создано при поддержке Отабека Умарова</p>
+                            <p class="footer__icon-about">Otabek Umarov qo'llab-quvvatlashi bilan yaratilgan </p>
                         </div>
                     </div>
                 </div>
