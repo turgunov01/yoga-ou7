@@ -77,7 +77,7 @@ a {
         column-gap: 2rem;
 
         &__icon {
-            opacity: 0.5;
+            opacity: 0.3;
 
             &.active {
                 opacity: 1;
@@ -669,7 +669,6 @@ a {
 
 .swiper-slide {
     transform: scale(0.9);
-    filter: opacity(0%);
 
     &-prev,
     &-next {
