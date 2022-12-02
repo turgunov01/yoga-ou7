@@ -698,6 +698,11 @@ a {
     .header::after {
         right: 0
     }
+
+    .slider {
+        max-width: unset;
+        width: 95vw;
+    }
 }
 
 @media (max-width: 990px) {
