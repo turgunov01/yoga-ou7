@@ -1,61 +1,61 @@
 window.addEventListener('DOMContentLoaded', function () {
 
 
-  const scene = document.querySelector('.scene');
-  const parallaxInstance = new Parallax(scene, {
-    relativeInput: true,
-    hoverOnly: true
-  })
+    const scene = document.querySelector('.scene');
+    const parallaxInstance = new Parallax(scene, {
+        relativeInput: true,
+        hoverOnly: true
+    })
 
-  this.addEventListener('resize', function () {
-    this.window.location.reload()
-    swiper.update()
-  })
+    this.addEventListener('resize', function () {
+        this.window.location.reload()
+        swiper.update()
+    })
 
-  var swiper = new Swiper(".mySwiper", {
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    speed: 2000,
-    duration: 2000,
-    transition: 2000,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 3000,
-
-    },
-    breakpoints: {
-      0: {
+    var swiper = new Swiper(".mySwiper", {
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 'auto',
         spaceBetween: 30,
-      },
-      660: {
-        spaceBetween: 20,
-      },
-    },
+        speed: 2000,
+        duration: 2000,
+        transition: 2000,
+        allowTouchMove: false,
+        autoplay: {
+            delay: 3000,
+
+        },
+        breakpoints: {
+            0: {
+                spaceBetween: 30,
+            },
+            660: {
+                spaceBetween: 20,
+            },
+        },
 
 
-    // initialSlides: 2,
-    // centeredSlides: true,
-    // loop: true,
-    // slidesPerView: 'auto',
-    // spaceBetween: 30,
-    // autoplay: {
-    //   delay: 3000,
-    //   speed: 3000,
-    // },
-  });
+        // initialSlides: 2,
+        // centeredSlides: true,
+        // loop: true,
+        // slidesPerView: 'auto',
+        // spaceBetween: 30,
+        // autoplay: {
+        //   delay: 3000,
+        //   speed: 3000,
+        // },
+    });
 })
 
 window.onload = function () {
-  if (!window.location.hash) {
-    window.location = window.location + '#loaded';
-    window.location.reload();
-  }
-  if (window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:3000/?lang=uz') {
-    window.location = window.location + '#loaded';
-    window.location.reload();
-  }
+    if (!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+    if (window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:3000/?lang=uz' || window.location.href == 'https://yogastream.netlify.app/?lang=uz') {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
 }
 
 
@@ -63,9 +63,9 @@ let body = document.querySelector('body')
 
 console.log("The full URL of this page is:<br>" + window.location.href)
 
-if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.location.href == 'http://localhost:2005/?lang=ru#loaded' || window.location.href == 'https://yogastream.uz?lang=ru' || window.location.href == 'http://localhost:2005/?lang=ru') {
-  console.log('Hello Russia')
-  body.innerHTML = `
+if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.location.href == 'http://localhost:2005/?lang=ru#loaded' || window.location.href == 'https://yogastream.uz?lang=ru' || window.location.href == 'http://localhost:2005/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/') {
+    //   console.log('Hello Russia')
+    body.innerHTML = `
     <nav class="nav">
         <div class="container">
             <div class="header__logo">
@@ -303,8 +303,8 @@ if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.loc
     `
 }
 if (window.location.href == 'https://yogastream.uz?lang=uz#loaded' || window.location.href == 'http://localhost:2005/?lang=uz#loaded' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz') {
-  console.log('Hello Uzbekistan')
-  body.innerHTML = `
+    //   console.log('Hello Uzbekistan')
+    body.innerHTML = `
     <nav class="nav">
         <div class="container">
             <div class="header__logo">
