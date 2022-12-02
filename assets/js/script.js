@@ -302,7 +302,7 @@ if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.loc
     <script src="./assets/js/script.js"></script>
     `
 }
-if (window.location.href == 'https://yogastream.uz?lang=uz#loaded' || window.location.href == 'http://localhost:2005/?lang=uz#loaded' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz' || window.location.href == 'https://yogastream.netlify.app/?lang=uz') {
+if (window.location.href == 'https://yogastream.uz?lang=uz#loaded' || window.location.href == 'https://yogastream.netlify.app/?lang=uz#loaded' || window.location.href == 'http://localhost:2005/?lang=uz#loaded' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz' || window.location.href == 'https://yogastream.netlify.app/?lang=uz') {
     //   console.log('Hello Uzbekistan')
     body.innerHTML = `
     <nav class="nav">
