@@ -629,13 +629,13 @@ a {
     width: 100%
 }
 
-.swiper-slide>div {
+/* .swiper-slide>div {
     transition: all 1s ease
 }
 
 .swiper-slide-visible {
     transition: all 1s ease !important
-}
+} */
 
 .swiper-slide {
     transform: scale(0.9)
