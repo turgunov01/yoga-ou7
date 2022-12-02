@@ -403,7 +403,7 @@ a {
 
 .main .intro__block {
     background: white;
-    width: 95%;
+    width: 100%;
     max-width: 96.4rem;
     height: 114.7rem;
     margin-bottom: 1rem;
@@ -411,9 +411,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 40px 30px;
-    position: relative;
-    justify-content: center;
-    margin: 0 auto;
+    position: relative
 }
 
 .main .slider {
