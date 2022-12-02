@@ -63,7 +63,7 @@ let body = document.querySelector('body')
 
 console.log("The full URL of this page is:<br>" + window.location.href)
 
-if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.location.href == 'http://localhost:2005/?lang=ru#loaded' || window.location.href == 'https://yogastream.uz?lang=ru' || window.location.href == 'http://localhost:2005/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/' || window.location.href == 'https://yogastream.netlify.app/#loaded') {
+if (window.location.href == 'https://yogastream.uz/' || window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.location.href == 'http://localhost:2005/?lang=ru#loaded' || window.location.href == 'https://yogastream.uz?lang=ru' || window.location.href == 'http://localhost:2005/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/' || window.location.href == 'https://yogastream.netlify.app/#loaded') {
     //   console.log('Hello Russia')
     body.innerHTML = `
     <nav class="nav">
