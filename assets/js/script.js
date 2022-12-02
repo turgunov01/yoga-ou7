@@ -47,15 +47,13 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 })
 
-window.onload = function () {
-    if (!window.location.hash) {
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
-    if (window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:3000/?lang=uz' || window.location.href == 'https://yogastream.netlify.app/?lang=uz') {
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
+if (!window.location.hash) {
+    window.location = window.location + '#loaded';
+    window.location.reload();
+}
+if (window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:3000/?lang=uz' || window.location.href == 'https://yogastream.netlify.app/?lang=uz') {
+    window.location = window.location + '#loaded';
+    window.location.reload();
 }
 
 
