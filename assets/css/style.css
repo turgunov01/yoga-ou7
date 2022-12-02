@@ -700,7 +700,7 @@ a {
     }
 
     .main .slider {
-        max-width: unset;
+        max-width: unset !important;
         width: 95vw;
     }
 }
