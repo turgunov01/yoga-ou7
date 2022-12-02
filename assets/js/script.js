@@ -63,7 +63,7 @@ let body = document.querySelector('body')
 
 console.log("The full URL of this page is:<br>" + window.location.href)
 
-if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.location.href == 'http://localhost:2005/?lang=ru#loaded' || window.location.href == 'https://yogastream.uz?lang=ru' || window.location.href == 'http://localhost:2005/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/') {
+if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.location.href == 'http://localhost:2005/?lang=ru#loaded' || window.location.href == 'https://yogastream.uz?lang=ru' || window.location.href == 'http://localhost:2005/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/?lang=ru' || window.location.href == 'https://yogastream.netlify.app/' || window.location.href == 'https://yogastream.netlify.app/#loaded') {
     //   console.log('Hello Russia')
     body.innerHTML = `
     <nav class="nav">
@@ -302,7 +302,7 @@ if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.loc
     <script src="./assets/js/script.js"></script>
     `
 }
-if (window.location.href == 'https://yogastream.uz?lang=uz#loaded' || window.location.href == 'http://localhost:2005/?lang=uz#loaded' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz') {
+if (window.location.href == 'https://yogastream.uz?lang=uz#loaded' || window.location.href == 'http://localhost:2005/?lang=uz#loaded' || window.location.href == 'https://yogastream.uz?lang=uz' || window.location.href == 'http://localhost:2005/?lang=uz' || window.location.href == 'https://yogastream.netlify.app/?lang=uz') {
     //   console.log('Hello Uzbekistan')
     body.innerHTML = `
     <nav class="nav">
