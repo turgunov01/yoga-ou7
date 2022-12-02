@@ -149,12 +149,12 @@ if (window.location.href == 'https://yogastream.uz?lang=ru#loaded' || window.loc
                                 Начните заниматься вместе с нами в бесплатном приложении OU7 Training и будьте здоровы
                             </p>
                             <div class="intro__install-btns">
-                                <a href="https://apps.apple.com/app/ou7-training-pro/id1487763621"
+                                <a target="_blank" href="https://apps.apple.com/app/ou7-training-pro/id1487763621"
                                     class="intro__install-btn">
                                     <img src="./assets/img/applestore.svg" class="intro__install-btn-image download"
                                         alt="">
                                 </a>
-                                <a href="https://play.google.com/store/apps/details?id=com.neotech.ou7"
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.neotech.ou7"
                                     class="intro__install-btn">
                                     <img src="./assets/img/googleplay.svg" class="intro__install-btn-image download"
                                         alt="">
@@ -468,10 +468,10 @@ if (window.location.href == 'https://yogastream.uz?lang=uz#loaded' || window.loc
                 </div>
             </div>
             <div class="intro__install-btns">
-                <a href="https://apps.apple.com/app/ou7-training-pro/id1487763621" class="intro__install-btn">
+                <a target="_blank" href="https://apps.apple.com/app/ou7-training-pro/id1487763621" class="intro__install-btn">
                     <img src="./assets/img/applestore.svg" class="intro__install-btn-image download" alt="">
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.neotech.ou7" class="intro__install-btn">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.neotech.ou7" class="intro__install-btn">
                     <img src="./assets/img/googleplay.svg" class="intro__install-btn-image download" alt="">
                 </a>
             </div>
