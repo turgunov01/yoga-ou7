@@ -1522,7 +1522,6 @@ a {
 
 .swiper-slide-next, .swiper-slide-prev {
     opacity: 0.8;
-    transition: .3s;
 
 }
 
