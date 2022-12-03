@@ -7,10 +7,6 @@ window.addEventListener('DOMContentLoaded', function () {
         hoverOnly: true
     })
 
-    this.addEventListener('resize', function () {
-        this.window.location.reload()
-        swiper.update()
-    })
 
     var swiper = new Swiper(".mySwiper", {
         centeredSlides: true,

@@ -1511,3 +1511,23 @@ a {
         height: 70rem
     }
 }
+
+
+.swiper-slide {
+    opacity: 0.4;
+}
+.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper-slide-next, .swiper-slide-prev {
+    opacity: 0.8;
+    transition: .3s;
+
+}
+
+@media(max-width: 768px) {
+    .swiper-slide {
+        opacity: 0;
+    }
+}
