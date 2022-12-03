@@ -1119,7 +1119,7 @@ a {
     }
 
     .main .intro__block {
-        height: 90rem
+        height: 100rem
     }
 
     .main .intro__pause-icon {
@@ -1356,7 +1356,13 @@ a {
 
 @media (max-width: 375px) and (max-width: 350px) {
     .header__content-icon {
-        right: -5% !important
+        right: 0% !important
+    }
+
+    .main .intro__text {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2rem;
     }
 
     .main .slider .swiper-slide-text {
@@ -1369,6 +1375,14 @@ a {
     .main .slider .swiper-slide-level {
         font-size: .705rem;
         line-height: 1.209rem
+    }
+
+    .main .intro__info {
+        margin-top: 0;
+    }
+
+    .main .intro__content-background {
+        margin-top: 0;
     }
 
     .main .intro__content-background::after {
@@ -1387,7 +1401,7 @@ a {
     }
 
     .main .intro__block {
-        height: 107rem
+        height: 90rem;
     }
 
     .main .intro__title {
